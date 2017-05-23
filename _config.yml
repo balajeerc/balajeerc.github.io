@@ -7,13 +7,13 @@
 
 # Site Settings
 locale                   : "en"
-title                    : "Site Title"
+title                    : "Balajee Ramachandran"
 title_separator          : "-"
 name                     : "Balajee RamaChandran"
 description              : "Programmer. Blogger. Nice Guy."
 url                      : "https://balajeerc.info"
-baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+baseurl                  : "/"
+repository               : "https://github.com/balajeerc/balajeerc.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
@@ -77,9 +77,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Balajee RamaChandran"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an amazing person."
+  bio              : "Programmer. Blogger. Nice Guy."
   location         : "Somewhere"
   email            :
   uri              :
