@@ -202,7 +202,7 @@
     border: 0;
     outline: none;
     color: #fff;
-    background-color: $primary-color;
+    background-color: rgb(0, 0, 0);
     cursor: pointer;
   }
 
@@ -214,12 +214,14 @@
     -webkit-box-flex: 1;
                 flex: 1;
     padding-right: 2rem;
+    padding-left: 2rem;
     overflow: hidden;
 
     li {
       -webkit-box-flex: 0;
                   flex: none;
       margin-right: 1rem;
+
       &:last-child {
         a {
           margin-right: 0;
