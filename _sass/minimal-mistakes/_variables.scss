@@ -15,7 +15,7 @@ $indent-var                 : 1.3em !default;
 /* system typefaces */
 $serif                      : Georgia, Times, serif !default;
 $sans-serif                 : -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif !default;
-$monospace                  : Monaco, Consolas, "Lucida Console", monospace !default;
+$monospace                  : "Roboto Mono", monospace !default;
 
 /* sans serif typefaces */
 $sans-serif-narrow          : $sans-serif !default;
@@ -29,8 +29,8 @@ $calisto                    : "Calisto MT", serif !default;
 $garamond                   : Garamond, serif !default;
 
 $global-font-family         : $sans-serif !default;
-$header-font-family         : $sans-serif !default;
-$caption-font-family        : $serif !default;
+$header-font-family         : $monospace !default;
+$caption-font-family        : $monospace !default;
 
 /* type scale */
 $type-size-1                : 2.441em !default;  // ~39.056px
@@ -60,7 +60,7 @@ $code-background-color-dark : $light-gray !default;
 $text-color                 : $dark-gray !default;
 $border-color               : $lighter-gray !default;
 
-$primary-color              : #7a8288 !default;
+$primary-color              : #ffffff !default;
 $success-color              : #62c462 !default;
 $warning-color              : #f89406 !default;
 $danger-color               : #ee5f5b !default;

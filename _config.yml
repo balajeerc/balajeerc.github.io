@@ -13,7 +13,7 @@ name                     : "Balajee RamaChandran"
 description              : "Programmer. Blogger. Nice Guy."
 url                      : "http://balajeerc.info"
 baseurl                  : "/"
-repository               : "https://github.com/balajeerc/balajeerc.github.io"
+repository               : "balajeerc/balajeerc.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
@@ -78,9 +78,9 @@ analytics:
 # Site Author
 author:
   name             : "Balajee RamaChandran"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "https://avatars0.githubusercontent.com/u/108554?v=3&s=400"
   bio              : "Programmer. Blogger. Nice Guy."
-  location         : "Somewhere"
+  location         : "Bangalore, India"
   email            :
   uri              :
   bitbucket        :

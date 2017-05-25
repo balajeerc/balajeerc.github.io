@@ -19,7 +19,7 @@
     -webkit-box-pack: justify;
      justify-content: space-between;
     padding: 1em 1em 1em;
-    font-family: $sans-serif-narrow;
+    font-family: 'Roboto Mono', monospace;
 
     @include breakpoint($x-large) {
       max-width: $x-large;
@@ -42,8 +42,9 @@
   align-self: stretch;
   -webkit-box-align: center;
         align-items: center;
-  font-weight: bold;
+  font-weight: normal;
   z-index: 20;
+  background-color: rgba(0, 0, 0, 1);
 }
 
 .masthead__menu {
@@ -69,7 +70,8 @@
   display: block;
   list-style-type: none;
   white-space: nowrap;
-
+  background-color: rgba(0, 0, 0, 1);  
+  
   &--lg {
     padding-right: 2em;
     font-weight: 700;

@@ -93,6 +93,7 @@
   padding-left: 15px;
   padding-right: 25px;
   line-height: 1;
+  color: rgb(0, 0, 0);
 
   @include breakpoint($large) {
     display: block;
@@ -104,7 +105,7 @@
 
 .author__name {
   margin: 0;
-
+  display: none;
   @include breakpoint($large) {
     margin-top: 10px;
     margin-bottom: 10px;
