@@ -12,7 +12,7 @@ title_separator          : "-"
 name                     : "Balajee RamaChandran"
 description              : "Programmer. Blogger. Nice Guy."
 url                      : "http://balajeerc.info"
-baseurl                  : "/"
+baseurl                  : ""
 repository               : "balajeerc/balajeerc.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
@@ -243,4 +243,10 @@ defaults:
       read_time: true
       comments: # true
       share: true
-      related: true
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
