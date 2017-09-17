@@ -139,7 +139,7 @@ decode s  = replicate (read' i) (head s') ++ decode (tail s')
   read' i = if i == "" then 1 else read i
 ```
 
-However, after I got over the despair, all the while being much more elegant and expressive, I realized something much more startling:
+However, after I got over the despair, I realized something much more startling:
 
 Every solution was very different from every other!
 
