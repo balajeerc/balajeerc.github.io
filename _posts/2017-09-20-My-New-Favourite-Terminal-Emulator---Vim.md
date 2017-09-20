@@ -1,6 +1,6 @@
-I hate having to use the mouse. I do everything I can to change my workflow so that I never have to touch it. That includes using a [tiling window manager](/Tiling-Window-Managers), [using Firefox with VimFx extenstion](https://addons.mozilla.org/en-US/firefox/addon/vimfx) so that I can use my browser just the way I use vim and using commandline apps rather than GUI apps for pretty much anything (vim, alpine, musikcube etc.)
+I hate having to use the mouse. I do everything I can to change my workflow so that I never have to touch it. That includes using a [tiling window manager](/Tiling-Window-Managers), [using Firefox with VimFx extension](https://addons.mozilla.org/en-US/firefox/addon/vimfx) so that I can use my browser just the way I use vim and using commandline apps rather than GUI apps for pretty much anything (vim, alpine, musikcube etc.)
 
-However, the one thing that really forced me to use the mouse quite often was my terminal emulator. Most terminal emulators are fine as long as you run commands. If you want to scroll up to see text though, you'll need some uncomfortable keystrokes (Win + Shift + up/down in gnome-terminal). The most annoying scenario is when you want to select text from a terminal, to copy paste somewhere else. The [hoops you need to jump through in gnome-terminal to do this natively are ridiculous](https://askubuntu.com/questions/302263/selecting-text-in-the-terminal-without-using-the-mouse). As of this writing, the only sane way to do this WITHOUT using the mouse is to always run your session via `screen`. `screen` is a great piece of software, but I really don't want to muscle memorize a whole slew of different shortcuts to change modes and select text when as a vim user, I have put in the effort of ingraining a functional workflow in me already. 
+However, the one thing that really forced me to use the mouse quite often was my terminal emulator. In most terminal emulators if you want to scroll up to see text, you'll need to employ some uncomfortable keystrokes (Win + Shift + up/down in gnome-terminal). The most annoying scenario is when you want to select text from a terminal, to copy paste it somewhere else. The [hoops you need to jump through in gnome-terminal to do this natively are ridiculous](https://askubuntu.com/questions/302263/selecting-text-in-the-terminal-without-using-the-mouse). As of this writing, the only sane way to do this WITHOUT using the mouse is to always run your session via `screen`. `screen` is a great piece of software, but I really don't want to muscle-memorize a whole slew of different shortcuts to change modes and select text when as a vim user, I have put in the effort of ingraining a functional workflow already. 
 
 So, that began my next quest: to find a termimal emulator that lets me use the vim workflow. Went through a bunch of terminal emulators trying to get them to fit the workflow I wanted. I hit dead ends repeatedly. I also tried using zsh's Vi mode. Am probably going to use zsh as my shell, but its vi mode does not let me customize the shortcuts the way I like. 
 
@@ -8,19 +8,21 @@ For eg. I use Cntrl+l and Cntrl+h to jump back and forth from start and ends of 
 
 Also, frankly I think the job of managing shortcuts and workflow ought to be the responsibility of my terminal emulator, not my shell.
 
-As is often in life, the perfect solution was always at hand. I just didn't see it so far.
+As is often in life, the perfect solution was always at hand, hiding in plain sight.
 
-[Neovim](https://neovim.io/) is a really great vim fork I have been using for a while now. Turns out that Neovim [can open a terminal emulator buffer](https://neovim.io/doc/user/nvim_terminal_emulator.html). I had even been happily using this feature for the past couple months all the while looking for a terminal emulator that I could copy this workflow with. 
+## If you want Vim, just use Vim!
 
-I feel like kicking myself for not seeing the obvious: why don't I just use nvim as my primary terminal emulator?
+[Neovim](https://neovim.io/) is a really great vim fork I have been using for a while now. Turns out that Neovim [can open a terminal emulator buffer](https://neovim.io/doc/user/nvim_terminal_emulator.html). I had even been happily using this feature for the past, while developing with code in one buffer and tge shell  in a split buffer.and all the while I was looking for a terminal emulator that I could copy this convenient terminal I had within nvim.
+
+I feel like kicking myself for not seeing the obvious: why don't I just use nvim with a single terminal buffer as my primary terminal emulator?
 
 There were a few simple customizations I needed to do:
 
 - allow nvim to start in insert mode at startup (done with the `+startinsert` commandline option)
-- make nvim start with a different stripped down configuration file because you don't want to incur the slowdown at startup of loading heavy plugins. (done with the `-u` option)
-- hide the vim status line at the bottom, just for cosmetic purposes so that the result looked like a terminal rather than another vim instance. (Achieved this thanks to a helpful [Stackoverflow snippet](https://unix.stackexchange.com/questions/140898/vim-hide-status-line-in-the-bottom))
+- make nvim start with a different stripped down configuration file because you don't want to incur the slowdown at startup of loading heavy vim plugins each time you open a terminal. (done with the `-u` option)
+- hide the vim status line at the bottom, just for cosmetic purposes so that the result looked like a typical terminal window rather than another vim instance. (Achieved this thanks to a helpful [Stackoverflow snippet](https://unix.stackexchange.com/questions/140898/vim-hide-status-line-in-the-bottom))
 
-So all in all, I just had to make this my terminal emulator:
+I just had to make the following shell snippet my primary terminal emulator:
 
 ```bash
 nvim +startinsert -u $HOME/.i3/terminal.init.vim term://bash
@@ -145,4 +147,4 @@ So what does the end result look like?
 
 ![nvim as terminal emulator](/images/posts/nvim_as_terminal_emulator.png)
  
-(Yes, I know how silly it is to take a screenshot of an i3wm workspace with floating windows in them, but I needed the eye-candy. :) )
+Yes, I know how ironical it is to take a screenshot of an i3wm workspace with floating windows in it, but I needed the eye-candy for this post. :)
