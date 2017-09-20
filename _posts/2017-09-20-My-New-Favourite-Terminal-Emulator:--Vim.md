@@ -12,7 +12,7 @@ As is often in life, the perfect solution was always at hand, hiding in plain si
 
 ## If you want Vim, just use Vim!
 
-[Neovim](https://neovim.io/) is a really great vim fork I have been using for a while now. Turns out that Neovim [can open a terminal emulator buffer](https://neovim.io/doc/user/nvim_terminal_emulator.html). I had even been happily using this feature for the past, while developing with code in one buffer and tge shell  in a split buffer.and all the while I was looking for a terminal emulator that I could copy this convenient terminal I had within nvim.
+[Neovim](https://neovim.io/) is a really great vim fork I have been using for a while now. Turns out that Neovim [can open a terminal emulator buffer](https://neovim.io/doc/user/nvim_terminal_emulator.html). I had even been happily using this feature for the past couple months while developing - code in one buffer and the shell  in a split buffer. All that time, I was looking for a terminal emulator that I could use to replicate this convenient shell environment I had within nvim.
 
 I feel like kicking myself for not seeing the obvious: why don't I just use nvim with a single terminal buffer as my primary terminal emulator?
 
