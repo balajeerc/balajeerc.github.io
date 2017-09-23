@@ -114,8 +114,8 @@ Ans: You get functional programming a la Haskell:
 ```haskell
 {-# LANGUAGE DeriveAnyClass #-}
 
--- Define a few placeholder types that will result
--- from each of the duck operations. 
+-- Define a few placeholder types that for each of
+-- the duck operations. 
 -- Just strings for now, but these can be as complex
 -- as necessary
 type FlightResult = String 
@@ -202,5 +202,3 @@ OOP proponents unnecessarily model what are essentially procedures as "classes".
 At some point, it feels like the OOP crowd are doing this due to some weird masochistic urge to self flagellate. Anything, rather than just embracing that all the tomes of design pattern dogma they have internalized over the years are inferior to paradigms espoused by functional programming.
 
 Let's stop please?
-
-ha¡
