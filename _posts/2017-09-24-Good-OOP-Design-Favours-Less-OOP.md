@@ -7,7 +7,7 @@ Let me illustrate with an example. Consider [the very first chapter of 'Head Fir
 The scenario is set up as follows. There is a company that makes a 'Duck Simulator' app. In the beginning, they have three kinds of ducks. The first stab at a simplistic design involves a Duck super class followed by two derived classes. The ducks differ only in their appearance; they swim and quack the same way.
 
 ```cpp
-class IDuck {
+class Duck {
 public:
     virtual void display() = 0; // Abstract, each duck displays differently
     void swim() { // ...swim like all ducks do }
@@ -15,21 +15,21 @@ public:
 };
 ```
 ```cpp
-class MallardDuck : public IDuck {
+class MallardDuck : public Duck {
 public:
 	void display() { // ... Display a Mallard duck };
 };
 ```
 
 ```cpp
-class RedheadDuck : public IDuck {
+class RedheadDuck : public Duck {
 public:
 	void display() { // ... Display a redhead duck };
 };
 ```
 
 ```cpp
-class RubberDuck : public IDuck {
+class RubberDuck : public Duck {
 public:
 	void display() { // ... Display a rubber duck };
 };
