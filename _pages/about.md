@@ -1,13 +1,16 @@
 (This is a quick informal introduction. If you are a headhunter who prefers neatly formatted resumes, you can find one of those in the header links.)
 
+__NOTE: Am not currently looking for opportunities__
+
 - Well rounded programmer. Programming professionally since 2010.
-- Diverse experience in various domains: most recently, Enterprise GIS (worked on all levels of the stack)
-- Love to code, and write software. So much so that I can't wait to retire so that I can code some more.
-- Functional Programming Zealot. I chew up OOP design patterns for breakfast and spit out elegant functional equivalents.
-- I love Haskell, C++, and Javascript (ES6) - in that order (proficiency in reverse of that order)
-- Frameworks/libraries that I reach for immediately are: ReactJS, Redux, Nodejs, Mongodb, and in the C++ side of things - Qt Framework
+- Diverse experience in various domains: most recently, Fintech (worked on all levels of the stack)
+- Love to code, trade derivatives, and code. (Like to code so nice, I say it twice).
+- Decent at a Poker table. Decent at Options trading. It ain't gambling if you can count cards.
+- Functional Programming Zealot. I chew up OOP design patterns for breakfast and spit out far more elegant functional equivalents.
+- Like most people who love Haskell, I work in other languages (Python, Javascript). Sigh.
+- Stack I reach for immediately are: Postgres, Python/NodeJS, ReactJS, Redux, Redux-Saga
 - My employers generally love me. I love them back. Hugs!
-- Highly opinionated. About just about everything. You can read my rants on Software engineering at this site. My political views are on my Facebook page.
+- Highly opinionated. On just about everything. You can read my rants on Software engineering at this site. My political views are on my Facebook page.
 - CAN BUILD ANYTHING!!!
 
 ### More Information
@@ -15,7 +18,6 @@
 - Graduated from NIT, Calicut (Kozhikode) in 2008 with a degree in Mechanical Engineering
 - Decided I loved computers more that cars by the end of it (I still can't drive!)
 - Decently grounded in Mathematics.
-
 
 ### Contact me
 

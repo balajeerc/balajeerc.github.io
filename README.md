@@ -47,3 +47,9 @@ $ bundle exec jekyll serve
 ## More info
 
 See the [minimalmistakes jekyll theme instructions](https://mmistakes.github.io/minimal-mistakes/docs/installation/).
+
+## Note to Self
+
+Resume needs to be manually updated by editing HTML. Old JSON resume based generation wont work because you manually updated the CSS. Dumbass.
+
+__Also, you need to make the edits in the resume.html in the top level directory_. Jekyll copies this to _site.
