@@ -43,3 +43,7 @@ Then run:
 $ bundle install
 $ bundle exec jekyll serve
 ```
+
+## More info
+
+See the [minimalmistakes jekyll theme instructions](https://mmistakes.github.io/minimal-mistakes/docs/installation/).
