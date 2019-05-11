@@ -17,9 +17,12 @@ Having a decent SQL IDE(?) like DBeaver also helps.
 
 I have always relied on vim to do most of the heavy lifting when it comes to code editing. I used to stub my nose at people relying on more "modern" editors.
 
-However, the advent of Golang into my life has forced me to reconsider this. Code completion, debugging and jumping to symbol using golang plugins for vim have been less than satisfactory. I reluctantly bit the bullet and started tinkering around with VSCode, telling myself it's only going to be for golang editing. However, after a weekend of tinkering with the keymaps, I came to the revelation that VSCode is **incredibly** customizable. Considering that it's a fu
+However, the advent of Golang into my life has forced me to reconsider this. Code completion, debugging and jumping to symbol using golang plugins for vim have been less than satisfactory. I reluctantly bit the bullet and started tinkering around with VSCode, telling myself it's only going to be for golang editing. 
+
+It was rough starting out. The vim plugin didn't exactly work like I wanted it. I hated having to use the mouse to switch between editor and the terminal. I hated that I couldn't use vim bindings in my terminal. I hated that I had to use arrow 
+However, after a weekend of tinkering with the keymaps, I came to the revelation that VSCode is **incredibly** customizable. 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEzMDc0MjMxNCwxNzE4NTY1MTE2XX0=
+eyJoaXN0b3J5IjpbLTkxMTY0MzYxMywxNzE4NTY1MTE2XX0=
 -->
