@@ -8,7 +8,8 @@ That means that you don't just Google for the answer, but you look up what you a
 The primary benefits I see to this process are:
 
 - looking up a book takes you to the same sections/snippets of code, reinforcing your memory rather than a Google search where you end up at a different link each time
-- the more
+- the more important benefit is the coherence in your mental mapping of the entire framework/body of knowledge, rather than fragmented tidbits you tend to gather by just Googling for a result
+- another very important benefit is that while you lookup something in a book, you learn something else that was related that you didn't know about, which affects your decision. 
 
 ## Lesson 2: Typesafety is Indispensable
  
@@ -51,6 +52,6 @@ And the best part is that all the settings and keybindings can be managed via fi
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzA0ODIzMDIsLTIzMDc4MTY3NywxODUwNj
-Q5NjMzLC0xODMxOTg4OSwxNzE4NTY1MTE2XX0=
+eyJoaXN0b3J5IjpbMjE0MzQzNTMxMywtMjMwNzgxNjc3LDE4NT
+A2NDk2MzMsLTE4MzE5ODg5LDE3MTg1NjUxMTZdfQ==
 -->
