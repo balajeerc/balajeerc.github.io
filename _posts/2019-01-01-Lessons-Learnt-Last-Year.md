@@ -7,7 +7,9 @@ The following will be a short post, introspecting on the lessons learnt over the
 ## Lesson 2: Learn to Stop Worrying and Love SQL
 
 I should probably reword this as: stop bothering with ORMs and love SQL.
+I have always hated SQL since I found the grammar very ugly. I hated it because it wasn't composable. I hated it because it just had too many primitives to hold in your head.
+I don't any m
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzI3NjIzNDc0LDE3MTg1NjUxMTZdfQ==
+eyJoaXN0b3J5IjpbLTE4ODI2OTM2NTksMTcxODU2NTExNl19
 -->
