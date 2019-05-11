@@ -13,7 +13,12 @@ Stuff that hangs around, and dominate for over a couple of decades need to have 
 Once you get over the initial repulsion and start grokking it, the power it brings you is magnificent. 
 Having a decent SQL IDE(?) like DBeaver also helps.
 
-## Lesson 3: VSCode
+## 
+
+## Lesson 3: Pick Declarative APIs over Imperative Ones
+
+
+## Lesson 4: VSCode
 
 I have always relied on vim to do most of the heavy lifting when it comes to code editing. I used to stub my nose at people relying on more "modern" editors.
 
@@ -27,5 +32,6 @@ And the best part is that all the settings and keybindings can be managed via fi
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MzE5ODg5LDE3MTg1NjUxMTZdfQ==
+eyJoaXN0b3J5IjpbLTE1NjUyNzUxNCwtMTgzMTk4ODksMTcxOD
+U2NTExNl19
 -->
