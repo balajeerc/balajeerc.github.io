@@ -13,9 +13,10 @@ Stuff that hangs around, and dominate for over a couple of decades need to have 
 Once you get over the initial repulsion and start grokking it, the power it brings you is magnificent. 
 Having a decent SQL IDE(?) like DBeaver also helps.
 
-## 
-
 ## Lesson 3: Pick Declarative APIs over Imperative Ones
+
+We needed a job scheduler. A replacement for cron really. We started out with `celery` as the default choice. 
+Turned out it was complex and not worth the ef
 
 
 ## Lesson 4: VSCode
@@ -32,6 +33,6 @@ And the best part is that all the settings and keybindings can be managed via fi
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NjUyNzUxNCwtMTgzMTk4ODksMTcxOD
+eyJoaXN0b3J5IjpbLTk3NzYzNDk1NSwtMTgzMTk4ODksMTcxOD
 U2NTExNl19
 -->
