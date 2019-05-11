@@ -1,7 +1,9 @@
 The following will be a short post, introspecting on the lessons learnt over the past year.
 
 ## Lesson 1: Learning How to Learn
-Possibly the most important lesson was a meta lesson of how to learn. I am an advocate of learning new tech by just building something and stackoverflow
+Possibly the most important lesson was a meta lesson of how to learn. I am an advocate of learning new tech by just building something and `stackoverflow`-ing your way through it. However, I now realize it's much more optimal to pick a comprehensive book on the topic, and stick to the intellectual straightjacket of looking up everything in then book itself.
+
+That means that you don't just Google for the answer, but you look up what you are trying to do 
 
 ## Lesson 2: Typesafety is Indispensable
  
@@ -44,6 +46,6 @@ And the best part is that all the settings and keybindings can be managed via fi
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODM2ODA2OTQ1LC0yMzA3ODE2NzcsMTg1MD
-Y0OTYzMywtMTgzMTk4ODksMTcxODU2NTExNl19
+eyJoaXN0b3J5IjpbMTYwMDE3Mzc2NCwtMjMwNzgxNjc3LDE4NT
+A2NDk2MzMsLTE4MzE5ODg5LDE3MTg1NjUxMTZdfQ==
 -->
