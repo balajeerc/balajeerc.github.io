@@ -23,8 +23,9 @@ Anyway, long story short, we switched to a different scheduler and queue manager
 
 While we didn't switch for this specific reason, it's API's just consumed a JSON input specifying the schedule and settings. 
 
-The result was that we could pro
+The result was that we could programmatically generate rather complex schedules and avoid a lot of boilerplate.
 
+This pattern seems to recur over and over again, whether it be in specifying UI frontend elements (jQuery, Angular and other old frameworks vs React), or picking schedulers or programming languages, dec
 
 ## Lesson 4: VSCode
 
@@ -40,6 +41,6 @@ And the best part is that all the settings and keybindings can be managed via fi
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY4MTgyNzY4MCwxODUwNjQ5NjMzLC0xOD
+eyJoaXN0b3J5IjpbMTQyNDYyNTAwMywxODUwNjQ5NjMzLC0xOD
 MxOTg4OSwxNzE4NTY1MTE2XX0=
 -->
