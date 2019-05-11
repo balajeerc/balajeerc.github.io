@@ -15,9 +15,11 @@ Having a decent SQL IDE(?) like DBeaver also helps.
 
 ## Lesson 3: VSCode
 
-I have always relied on vim to do most of the heavy lifting when it comes to code editing. I used to stub my nose at people 
+I have always relied on vim to do most of the heavy lifting when it comes to code editing. I used to stub my nose at people relying on more "modern" editors.
+
+However, the advent of Golang into my life has forced me to reconsider this. Code completion, debugging and jumping to symbol using golang plugins for vim have been less than satisfactory. I reluctantly bit the bullet and started tinkering around with VSCode, telling myself it's only going to be for 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDA4ODExNDE4LDE3MTg1NjUxMTZdfQ==
+eyJoaXN0b3J5IjpbLTIxNDI4MzA3OTYsMTcxODU2NTExNl19
 -->
