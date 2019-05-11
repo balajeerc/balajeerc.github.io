@@ -19,10 +19,11 @@ I have always relied on vim to do most of the heavy lifting when it comes to cod
 
 However, the advent of Golang into my life has forced me to reconsider this. Code completion, debugging and jumping to symbol using golang plugins for vim have been less than satisfactory. I reluctantly bit the bullet and started tinkering around with VSCode, telling myself it's only going to be for golang editing. 
 
-It was rough starting out. The vim plugin didn't exactly work like I wanted it. I hated having to use the mouse to switch between editor and the terminal. I hated that I couldn't use vim bindings in my terminal. I hated that I had to use arrow 
-However, after a weekend of tinkering with the keymaps, I came to the revelation that VSCode is **incredibly** customizable. 
+It was rough starting out. The vim plugin didn't exactly work like I wanted it. I hated having to use the mouse to switch between editor and the terminal. I hated that I couldn't use vim bindings in my terminal. I hated that I had to use arrow keys to move between intellisense suggestions. And omg, do you really have to take up so much screen real estate with that sidebar and status bar and half a dozen toolbars I never see myself using?
+
+However, after a weekend of tinkering with the keymaps, I came to the revelation that VSCode is **incredibly** customizable. Using keybindingDon't wan't UI clutter? Use 'Zen' mode. Don' 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkxMTY0MzYxMywxNzE4NTY1MTE2XX0=
+eyJoaXN0b3J5IjpbLTEyNjQxNDQwMDMsMTcxODU2NTExNl19
 -->
