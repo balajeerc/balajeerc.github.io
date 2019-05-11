@@ -11,8 +11,13 @@ I have always hated SQL since I found the grammar very ugly. I hated it because 
 I don't anymore.
 Stuff that hangs around, and dominate for over a couple of decades need to have some merit.
 Once you get over the initial repulsion and start grokking it, the power it brings you is magnificent. 
-Having a decent SQL IDE(?)
+Having a decent SQL IDE(?) like DBeaver also helps.
+
+## Lesson 3: VSCode
+
+I have always relied on vim to do most of the heavy lifting when it comes to code editing. I used to stub my nose at people 
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMjE3MTU2NDksMTcxODU2NTExNl19
+eyJoaXN0b3J5IjpbNDA4ODExNDE4LDE3MTg1NjUxMTZdfQ==
 -->
