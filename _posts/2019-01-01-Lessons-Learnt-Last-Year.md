@@ -8,8 +8,11 @@ The following will be a short post, introspecting on the lessons learnt over the
 
 I should probably reword this as: stop bothering with ORMs and love SQL.
 I have always hated SQL since I found the grammar very ugly. I hated it because it wasn't composable. I hated it because it just had too many primitives to hold in your head.
-I don't any m
+I don't anymore.
+Stuff that hangs around, and dominate for over a couple of decades need to have some merit.
+Once you get over the initial repulsion and start grokking it, the power it brings you is magnificent. 
+Having a decent SQL IDE(?)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4ODI2OTM2NTksMTcxODU2NTExNl19
+eyJoaXN0b3J5IjpbLTIwMjE3MTU2NDksMTcxODU2NTExNl19
 -->
