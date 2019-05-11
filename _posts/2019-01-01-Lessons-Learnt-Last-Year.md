@@ -17,7 +17,8 @@ Having a decent SQL IDE(?) like DBeaver also helps.
 
 We needed a job scheduler. A replacement for cron really. We started out with `celery` as the default choice. 
 Turned out it was complex and not worth the effort. Celery had bugs involving the way it schedules the next job before the previous one completes. And the worst part is that the workers routinely crash.
-I wish I remembered the details but I don't so I can't link it here.
+I wish I remembered the details of the bug so that I could link to the celery bug report, but I don't.
+Anyway, long story short, we switched to
 
 
 ## Lesson 4: VSCode
@@ -34,6 +35,6 @@ And the best part is that all the settings and keybindings can be managed via fi
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg1MDY0OTYzMywtMTgzMTk4ODksMTcxOD
-U2NTExNl19
+eyJoaXN0b3J5IjpbLTY4OTIwMDQ5NywxODUwNjQ5NjMzLC0xOD
+MxOTg4OSwxNzE4NTY1MTE2XX0=
 -->
