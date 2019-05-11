@@ -21,10 +21,9 @@ However, the advent of Golang into my life has forced me to reconsider this. Cod
 
 It was rough starting out. The vim plugin didn't exactly work like I wanted it. I hated having to use the mouse to switch between editor and the terminal. I hated that I couldn't use vim bindings in my terminal. I hated that I had to use arrow keys to move between intellisense suggestions. And omg, do you really have to take up so much screen real estate with that sidebar and status bar and half a dozen toolbars I never see myself using?
 
-However, after a weekend of tinkering with the keymaps, I came to the revelation that VSCode is **incredibly** customizable. Using keybindings.json, I could customize _every little detail_ to work exactly the way I wanted. You'd have to try it to believe it. Switch to `hjkl` to move around 
-Don't wan't UI clutter? Use 'Zen' mode. Don' 
+However, after a weekend of tinkering with the keymaps, I came to the revelation that VSCode is **incredibly** customizable. Using keybindings.json, I could customize _every little detail_ to work exactly the way I wanted. You'd have to try it to believe it. Switch to `hjkl` to move around windows. Check. Use `jk` to move up and down intellisense suggestions. Check. Want a custom terminal that you love in place of the default console? Sure, no probs. Don't wan't UI clutter? Use 'Zen' mode. Wait, but I want the status bar in Zen mode but not the menu bar. Yes, can do. 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE0NDg3Mjk0OSwxNzE4NTY1MTE2XX0=
+eyJoaXN0b3J5IjpbNzM2MDU3ODA2LDE3MTg1NjUxMTZdfQ==
 -->
