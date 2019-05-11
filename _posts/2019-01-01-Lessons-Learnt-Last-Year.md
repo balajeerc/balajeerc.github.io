@@ -1,10 +1,13 @@
 The following will be a short post, introspecting on the lessons learnt over the past year.
 
-## Lesson 1: Typesafety is Indispensable
+## Lesson 1: Learning How to Learn
+Possibly the most important lesson was a meta lesson of how to learn. I am an advocate of learning new tech by just building something and stackoverflow
+
+## Lesson 2: Typesafety is Indispensable
  
  I'll probably write a longer post on this, but long story short, am never picking a language without compile time type checking if I have a choice.
 
-## Lesson 2: Learn to Stop Worrying and Love SQL
+## Lesson 3: Learn to Stop Worrying and Love SQL
 
 I should probably reword this as: stop bothering with ORMs and love SQL.
 I have always hated SQL since I found the grammar very ugly. I hated it because it wasn't composable. I hated it because it just had too many primitives to hold in your head.
@@ -13,7 +16,7 @@ Stuff that hangs around, and dominate for over a couple of decades need to have 
 Once you get over the initial repulsion and start grokking it, the power it brings you is magnificent. 
 Having a decent SQL IDE(?) like DBeaver also helps.
 
-## Lesson 3: Pick Declarative APIs over Imperative Ones
+## Lesson 4: Pick Declarative APIs over Imperative Ones
 
 We needed a job scheduler. A replacement for cron really. We started out with `celery` as the default choice. 
 Turned out it was complex and not worth the effort. Celery had bugs involving the way it schedules the next job before the previous one completes. And the worst part is that the workers routinely crash.
@@ -27,7 +30,7 @@ The result was that we could programmatically generate rather complex schedules 
 
 This pattern seems to recur over and over again, whether it be in specifying UI frontend elements (jQuery, Angular and other old frameworks vs React), or picking schedulers or programming languages, whatever tends to be more declarative always seems to be more easy to reason about, more composable and maintainable.
 
-## Lesson 4: VSCode
+## Lesson 5: VSCode
 
 I have always relied on vim to do most of the heavy lifting when it comes to code editing. I used to stub my nose at people relying on more "modern" editors.
 
@@ -41,6 +44,6 @@ And the best part is that all the settings and keybindings can be managed via fi
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIzMDc4MTY3NywxODUwNjQ5NjMzLC0xOD
-MxOTg4OSwxNzE4NTY1MTE2XX0=
+eyJoaXN0b3J5IjpbODM2ODA2OTQ1LC0yMzA3ODE2NzcsMTg1MD
+Y0OTYzMywtMTgzMTk4ODksMTcxODU2NTExNl19
 -->
