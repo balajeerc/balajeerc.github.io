@@ -25,7 +25,7 @@ While we didn't switch for this specific reason, it's API's just consumed a JSON
 
 The result was that we could programmatically generate rather complex schedules and avoid a lot of boilerplate.
 
-This pattern seems to recur over and over again, whether it be in specifying UI frontend elements (jQuery, Angular and other old frameworks vs React), or picking schedulers or programming languages, dec
+This pattern seems to recur over and over again, whether it be in specifying UI frontend elements (jQuery, Angular and other old frameworks vs React), or picking schedulers or programming languages, whatever tends to be more declarative always seems to be more easy to reason about, more composable and maintainable.
 
 ## Lesson 4: VSCode
 
@@ -41,6 +41,6 @@ And the best part is that all the settings and keybindings can be managed via fi
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQyNDYyNTAwMywxODUwNjQ5NjMzLC0xOD
+eyJoaXN0b3J5IjpbLTIzMDc4MTY3NywxODUwNjQ5NjMzLC0xOD
 MxOTg4OSwxNzE4NTY1MTE2XX0=
 -->
