@@ -1,4 +1,6 @@
-I hear about Agile sometimes, spok
+I hear about Agile sometimes from co-workers, spoken either with reverence or absolute disgust. And no discussion on Agile is complete without a rant on its cornerstone: scrums. 
+
+I thought I'd mention here the **only** project that I ever worked on where any sort of project management technique that was dep
 
 I once worked as a team lead on a project that had over-run its costs and was on the verge of cancellation because the PM (who was also the scrum master) gave us the wrong requirements document. <dramatic pause>
 
@@ -14,5 +16,5 @@ iii. This resulted in a system where I would send the Project docs to the CEO ev
 
 The biggest lesson I learned in the process was that managers/execs don't all necessarily want to keep breathing down your neck, or make you run faster than you want to. They just want to be told  _as soon_  as problems occur rather than letting delays build. Usually, once they knew what the issues were, they were very helpful. It was also a virtuous cycle: the execs now trusted the team's ability to execute, and the team, in turn, felt more confident to turn to the execs for help when there were bottlenecks.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMjQ4MDczNTNdfQ==
+eyJoaXN0b3J5IjpbNTg0MjkyMjE1XX0=
 -->
