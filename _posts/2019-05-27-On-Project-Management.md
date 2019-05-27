@@ -4,7 +4,7 @@ I thought I'd mention here the **only** project that I ever worked on where any 
 
 I once worked as a team lead on a project (in a different company) that had over-run its costs and was on the verge of cancellation because the PM (who was also the scrum master) gave us the wrong requirements document. (_dramatic pause_)
 
-The CEO came over to me and just asked me to take over, what with us now not having a PM till they could hire another. I used this opportunity to push for a change to our scrum process, which I felt was not working (though it had nothing to with the aforementioned derailment) and asked him to give me leeway to follow a different process.
+The CEO came over to me and asked me to take over, what with us now not having a PM till they could hire another. I used this opportunity to push for a change to our scrum process, which I felt was not working (though it had nothing to with the aforementioned derailment) and asked him to give me leeway to follow a different process.
 
 Cut to 3 months down the line, we managed to wrap up the project. Here were the changes we initiated:
 
@@ -18,5 +18,5 @@ The biggest lesson I learned in the process was that managers/execs don't all ne
 
 I also learnt that Microsoft Project is a planner's best friend. Not so much the Gantt chart but the timeline view.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTExNDYwNTU4OF19
+eyJoaXN0b3J5IjpbLTQyNDg5ODU3Nl19
 -->
