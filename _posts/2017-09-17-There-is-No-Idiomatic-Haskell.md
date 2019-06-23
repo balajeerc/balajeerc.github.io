@@ -1,6 +1,6 @@
 Haskell is the most expressive programming language that I have ever encountered. More than Clojure and other Lisps. More than any of the half dozen imperative languages I have had the trouble of dealing with. It manages to pull off this level of expressiveness with just a dozen or so special forms. I have never been as besotted with any other language.
 
-However, Haskell has a very interesting trait. There is no idiomatic way of doing anything!
+However, Haskell has a very interesting trait. There is no idiomatic way of doing any8thing!
 
 ## Too Many Roads Leading to Rome
 
@@ -218,3 +218,6 @@ Then there is the whole issue of effiency. Haskell lets you write immensely expr
 Yes. Haskell is the laboratory of all great ideas in language design and is likely going to be that way for a while to come. I am wiser for seeing what polymorphism looks like when done right. Everything about the language has me in its thrall. 
 
 It's like learning Latin. You probably won't get the opportunity to use it on an everyday basis. However, it will enrich your understanding of just about every other language you know.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTM2MDM5NjA5Ml19
+-->
