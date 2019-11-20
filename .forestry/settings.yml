@@ -4,12 +4,6 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
-- type: directory
-  path: https://github.com/balajeerc/balajeerc.github.io/tree/master/images/posts
-  label: Images
-  create: all
-  match: "**/*"
-  new_doc_ext: png
 - type: jekyll-pages
   label: Pages
   create: all
