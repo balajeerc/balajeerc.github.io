@@ -36,7 +36,7 @@ The trouble was that graphics engines/game engines are extremely stateful applic
 
 However, I still find myself relying on debuggers occasionally, but for an altogether different reason: lack of type information.
 
-Since there's no way for you to tell what the shape of inputs to JS/Python functions are, I am forced to again open up the code in debuggers to investigate when errors occurred. In fact, it's nigh impossible to reason about JS bugs without a debugger, even when the code is stateless, even when it's just pure functions calling each other. The problem stems from the fact that you don't know the shape of inputs to those functions, and when one of the params input is `null` or `undefined`
+Since there's no way for you to tell what the shape of inputs to JS/Python functions are, I am forced to again open up the code in debuggers to investigate when errors occur. In fact, it's nigh impossible to reason about JS bugs without a debugger, even when the code is stateless, even when it's just pure functions calling each other. The problem stems from the fact that you don't know the shape of inputs to those functions, and when one of the params input is `null` or `undefined`.
 
 This is in contrast to a type-safe functional language like Haskell that I dabbled with in my spare time, where I never feel the need for a debugger. I realize now that while functional programming itself makes it easier to reason about state and mutations, dynamically typed languages still necessitate a debugger to reason about the shape of data when things go awry.
 
