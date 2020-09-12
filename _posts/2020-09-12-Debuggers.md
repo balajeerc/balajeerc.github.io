@@ -10,7 +10,7 @@ He politely interrupted me and pointed out that I could use this thing called `g
 
 (As an aside: several years later, I'd go on to co-found [a company](https://sensibull.com/ "Sensibull") with [that senior](https://in.linkedin.com/in/abidhassan). As luck would have it, he moved away from computing after college but probably had not too small a role in setting me off on my career in software development.)
 
-Ever since I discovered debuggers and learnt to use them with some modicum of competence, I was a vocal proponent for them. However, over the recent few years my thoughts on this have undergone some transformation.
+Ever since I discovered debuggers and learnt to use them with some modicum of competence, I have been a vocal proponent for them. However, over the recent few years my thoughts on this have undergone significant transformation.
 
 The first trigger to me questioning my embrace of step debuggers was when a colleague at work I respect immensely, and an old college mate of mine that I regard highly, both described step debugging as 'boring', in separate conversations with me. At the time, I suppose I didn't get the full import of what they were trying to convey. To me, getting stuff done as quick as possible seemed more important than turning every bug hunting session into a kind of intellectual joust.
 
@@ -44,13 +44,13 @@ This is in contrast to a typesafe functional language like Haskell that I dabble
 
 In addition to the above two scenarios, there is another kind of code that necessitates use of debuggers: long imperatively written functions, full of while loops and mutations of counters and flags. More simply speaking: bad code. I have run up against this in codebases that were written in both static typed (C++, Golang, Java) and dynamically typed languages (Javascript, Python).
 
-While one strives to write elegant, simple code, more often that not you run up against an existing codebase full of complex functions like the above that it is now your responsibility to fix a bug in. Without a debugger, this will typically require you to construct a complex state machine in your head. 
+While one strives to write elegant, simple code, more often that not you run up against an existing codebase full of complex functions like the above that it is now your responsibility to fix a bug in. Without a debugger, this will typically require you to construct a complex state machine in your head.
 
 Some people love doing this. I find it an exercise in masochism. Life is too short to be expending intellectual effort on fixing shitty code. I'd rather spin up a debugger to troubleshoot a bug and squash it ASAP, or just refactor the existing code into easier to reason about smaller chunks. In the real world, most of the time, that refactor and the necessary re-testing of all the flows in that new code is just a luxury you cannot afford. So I prefer to just fix the bug and move on. The important thing I've found in these situations is to NOT be too eager to 'be done with it' either. As with all things in life, you need to strike a balance between narrowing down on the problem, and figuring out the overall context of that code, shitty as it may be, so as to not introduce new bugs in the process.
 
 ## The No Debugger Straightjacket
 
-These days when I write code, I put myself in an intellectual straightjacket: I refuse to use a debugger though I always have a debugger accessible to me. I don't use naive `print` statements (or its equivalent) either. 
+These days when I write code, I put myself in an intellectual straightjacket: I refuse to use a debugger though I always have a debugger accessible to me. I don't use naive `print` statements (or its equivalent) either.
 
 Instead, when I do need to troubleshoot a bug, I add logs. Specifically, debug logs. Copious amounts of it. And I any debug log I add, I leave it in code. After all, they only manifest when you turn `LOG_LEVEL` to the necessary verbosity.
 
@@ -66,7 +66,7 @@ I think this just about sums up my thoughts on the matter. I also think this to 
 
 My rules of thumb are, spin up a debugger only if:
 
-- you are trying to understand a new codebase.
-- you are grappling with extensive state management in an 'object oriented' codebase.
-- you are trying to figure out the shape of a piece of data in a dynamically typed language.
-- you are troubleshooting a bug in a poorly written piece of code that is not worth refactoring at the moment.
+* you are trying to understand a new codebase.
+* you are grappling with extensive state management in an 'object oriented' codebase.
+* you are trying to figure out the shape of a piece of data in a dynamically typed language.
+* you are troubleshooting a bug in a poorly written piece of code that is not worth refactoring at the moment.
