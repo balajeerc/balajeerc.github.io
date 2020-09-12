@@ -9,4 +9,5 @@ fields:
   label: test
   description: test
 pages:
+- _posts/Debuggers.md
 - _posts/On Mypy.md
