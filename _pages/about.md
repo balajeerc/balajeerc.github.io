@@ -22,3 +22,10 @@ __NOTE: Am not currently looking for opportunities__
 ### Contact me
 
 [mail@balajeerc.info](mailto:mail@balajeerc.info)
+
+
+### Public Key
+
+```
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIAD+Bq010WAvKGc9rUdlIVBqbgevna5UGkXWcybedX3+ mail@balajeerc.info
+```
