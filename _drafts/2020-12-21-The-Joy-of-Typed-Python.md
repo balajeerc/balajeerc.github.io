@@ -4,11 +4,11 @@ test: ''
 ---
 If I am to start working on a new project today, I would hesitate to attempt it in a language that does not have compile time type checking. However, I do have to deal with Python at work (though we are slowly phasing it out). In addition I have been working off and on, in my spare time, on a Python project that has over the past 3+ years gotten fairly large as personal projects go. It started off as a one-off quick script. It eventually evolved into something larger that actually does something useful for me so I ended up adding to it and maintaining it.
 
-Somewhere over a year and a half back, after being frustrated with my inability to refactor this code like I can with other type safe languages, I started exploring the possibility of adding type hints to the codebase. Now, after having spent the requisite time to understand the implications of type hinting, and whether it's useful, and with a view to being able to show this as a consolidation of my thoughts on the matter to friends and colleagues, I decided to write this post on what an __absolute joy__ it has become to refactor and work with Python once you have type checking enforced.
+Somewhere over a year and a half back, after being frustrated with my inability to refactor this code like I can with other type safe languages, I started exploring the possibility of adding type hints to the codebase. Now, after having spent the requisite time to understand the implications of type hinting, and whether it's useful, and with a view to being able to show this as a consolidation of my thoughts on the matter to friends and colleagues, I decided to write this post on what an **absolute joy** it has become to refactor and work with Python once you have type checking enforced.
 
 Just to set expectations right: the following is more of gushing praise for `mypy` rather than [a tutorial on how to use it](https://mypy.readthedocs.io/en/stable/getting_started.html). If you are already using `mypy` on a regular basis, you are likely going to learn little from what follows. This is written with the hope of giving other friends of mine who are Python programmers an overview of starting with type annotations, if they aren't already using them by detailing the nice things it provides. It also details some of the effort you will likely need to pay up front to make type-checking effective in your codebase, and the rough edges (yes, there are some) in the type annotation system that will likely cause you some annoyance.
 
-Another expectation I'd like to calibrate is for people coming to this from a language with a sophisticated type system such as Rust or Haskell, or even more traditional type systems like Java and C++. These are things you take for granted and you will likely scoff at some of the things written here. However, I urge you to look at the benefits the following provide to the current state of Python programming that has no static type checking. 
+Another expectation I'd like to calibrate is for people coming to this from a language with a sophisticated type system such as Rust or Haskell, or even more traditional type systems like Java and C++. These are things you take for granted and you will likely scoff at some of the things written here. However, I urge you to look at the benefits the following provide to the current state of Python programming that has no static type checking.
 
 ## Overview of Type Annotations in Python
 
@@ -27,9 +27,7 @@ One such type-checker is `mypy` - the earliest implementation of its kind that s
 
 Running `mypy` on a file containing the aforementioned invocation of the `sum` function above with string arguments results in the following error from the type checker:
 
-```
-Argument 2 to "sum" has incompatible type "str"; expected "int"
-```
+    Argument 2 to "sum" has incompatible type "str"; expected "int"
 
 `mypy` is not the only type checker out there. There are other type checkers such as `Pyright` from Microsoft and `pyre` from Facebook. However, my experience with them is limited and the following notes are based on my experience with `mypy` exclusively.
 
@@ -39,7 +37,7 @@ The trivial example that I stated above does not do justice to the sophisticatio
 
 ### Optional Values, Strictly Enforced
 
-If there is a single thing that you can take away from this post, it ought to be the unreasonable effectiveness of strictly checked optional values. Just this one feature has had such a dramatic improvement on my code correctness that I cannot emphasise this enough. 
+If there is a single thing that you can take away from this post, it ought to be the unreasonable effectiveness of strictly checked optional values. Just this one feature has had such a dramatic improvement on my code correctness that I cannot emphasise this enough.
 
 Errors in software arising from not checking for nulls is ["a billion dollar problem"](https://www.infoq.com/presentations/Null-References-The-Billion-Dollar-Mistake-Tony-Hoare/) and `mypy` is an invaluable guard against them. The primary type annotation (_type modifier_ in `mypy` terms) that helps with this is the [`Optional`](https://github.com/dry-python/returns#result-container) annotation. In my opinion, explicitly handling and indicating where a value can be null fosters greater code correctness as  to approaches in languages like Java where any value can potentially be null.
 
@@ -53,7 +51,7 @@ class Customer:
 
 In this type, we encode the fact that we may sometime not have the customer's address registered in our database, into the type itself. In vanilla Python without annotations, we would have just defined it as a string with the possibility that it may be `None` that we need to 'remember' any time we used it.
 
-To demonstrate the utility of `Optional` type used in conjunction with `mypy`, let's look at a (slightly contrived) example of an implementation checking how far a customer resides from our store. To simplify the example, we abstract away the details of looking up a [Geocoding service](https://developers.google.com/maps/documentation/javascript/examples/geocoding-simple) and code to calculate distance between two geo-coordinates. 
+To demonstrate the utility of `Optional` type used in conjunction with `mypy`, let's look at a (slightly contrived) example of an implementation checking how far a customer resides from our store. To simplify the example, we abstract away the details of looking up a [Geocoding service](https://developers.google.com/maps/documentation/javascript/examples/geocoding-simple) and code to calculate distance between two geo-coordinates.
 
 A first iteration of this code might look like so:
 
@@ -81,10 +79,8 @@ def get_delivery_distance(customer: Customer, store_coords: Coords) -> float:
 
 Running this through `mypy` generates the following errors:
 
-```
-geo.py:18: error: Incompatible types in assignment (expression has type "Optional[Tuple[float, float]]", variable has type "Tuple[float, float]")
-geo.py:18: error: Argument 1 to "geo_lookup" has incompatible type "Optional[str]"; expected "str"
-```
+    geo.py:18: error: Incompatible types in assignment (expression has type "Optional[Tuple[float, float]]", variable has type "Tuple[float, float]")
+    geo.py:18: error: Argument 1 to "geo_lookup" has incompatible type "Optional[str]"; expected "str"
 
 As you can imagine, this is quite a lifesaver in more real world conditions. `mypy` just caught the error of using `customer.address` without checking if it is `None`. It also caught the bug where we are trying to assign the `geo_coords` value to the return from `geo_lookup` without accounting for the fact that it too can return `None`.
 
@@ -108,7 +104,7 @@ If you are a Rust or Haskell programmer, you are at this point cringing at all t
 
 ### Generics
 
-The irony of lauding the support for generics in the type annotations of a language that is intrinsically dynamically typed is not lost on me. Nevertheless, as soon as you enter the world that is typed Python even if it's make believe, you start needing generics. Thankfully, the support for it is quite nice. 
+The irony of lauding the support for generics in the type annotations of a language that is intrinsically dynamically typed is not lost on me. Nevertheless, as soon as you enter the world that is typed Python even if it's make believe, you start needing generics. Thankfully, the support for it is quite nice.
 
 Here is a snippet plagiarised entirely from the `mypy` [documentation](https://mypy.readthedocs.io/en/stable/generics.html#defining-generic-classes):
 
@@ -142,7 +138,7 @@ Numeric = TypeVar('Numeric', int, float)
 
 ### Interfaces
 
-Classic interface implementation as is standard in object oriented Python, using  `ABC` module, [just works](https://mypy.readthedocs.io/en/stable/class_basics.html#abstract-base-classes-and-multiple-inheritance), and it generally does not excite me much since most code I prefer to write myself is procedural. 
+Classic interface implementation as is standard in object oriented Python, using  `ABC` module, [just works](https://mypy.readthedocs.io/en/stable/class_basics.html#abstract-base-classes-and-multiple-inheritance), and it generally does not excite me much since most code I prefer to write myself is procedural.
 
 However, thanks to the fact that Python supports static inheritance, i.e. you can define a `@staticmethod` as `@abstract` you can create contracts that classes can implement. This might sound a bit strange to people coming from Java where static inheritance is absent altogether.
 
@@ -217,7 +213,7 @@ class BreadthFirstWalk(TreeWalk):
     ## -- snip --
 ```
 
-I prefer organising code as shown above rather than an equivalent implementation of `TreeWalk(er)` with `walk` and `last` as instance methods in line with traditional `Visitor` pattern implementations. 
+I prefer organising code as shown above rather than an equivalent implementation of `TreeWalk(er)` with `walk` and `last` as instance methods in line with traditional `Visitor` pattern implementations.
 
 My justification for this is that the above code fosters the use of pure functions, and eliminates the possibility of any `TreeWalk` implementation creating and retaining local state. Effectively, each `TreeWalk` implementation becomes a collection of pure functions.
 
@@ -249,7 +245,7 @@ WalkRegistry.register(DepthFirstWalk)
 assert WalkRegistry.retrieve("DEPTH_FIRST") is not None
 ```
 
-Note here that the argument `walk` to the `WalkRegistry.register` classmethod is a _type_ and not a concrete instance. That type input is then stored in a dictionary (``WalkRegistry._register` in the above code). In other words, types themselves are first class citizens of the annotation system.
+Note here that the argument `walk` to the `WalkRegistry.register` classmethod is a _type_ and not a concrete instance. That type input is then stored in a dictionary (\`\`WalkRegistry._register\` in the above code). In other words, types themselves are first class citizens of the annotation system.
 
 If you are from a Java background, you might be able to use the catch-all `Class` type to pass a type as argument but I am as of this writing unaware of a way to constrain that type to a particular interface as we do in this code (`TreeWalk`). In C++, as far as I know, this sort of code where you store a _type_ in `std::map` is not possible at all.
 
@@ -329,7 +325,7 @@ error: Argument 1 to "calculate_length" has incompatible type "str"; expected "T
 
 ### Serialisation/Deserialisation
 
-This is again akin to the third party code boundary issue that you can't really enforce type safety in as nicely as you would like. For starters, there isn't really a JSON type annotation available because that [would again need recursive type support](https://github.com/python/mypy/issues/731#issuecomment-317401621). 
+This is again akin to the third party code boundary issue that you can't really enforce type safety in as nicely as you would like. For starters, there isn't really a JSON type annotation available because that [would again need recursive type support](https://github.com/python/mypy/issues/731#issuecomment-317401621).
 
 Furthermore, there really isn't anything as nice as `serde` in Rust or `marshal/unmarshal` in Golang that is available here. You will need to rely on traditional Python serialisation and deserialisation facilities which work well enough, but still leaves you with the task of manually rolling custom encoders and decoders per serialisation format.
 
@@ -347,7 +343,7 @@ Converting a `Dict` to a class is no small matter and will likely see cascading 
 
 #### Fighting  `Any` Urges
 
-As you refactor, a good rule of thumb on when to switch a `dict` into a `class` is when you start seeming to need the `Dict[str, Any]` annotation. Except in wrapper functions dealing with third party library code, a profusion of `Any` is a sure sign that you are doing typing sub-optimally. 
+As you refactor, a good rule of thumb on when to switch a `dict` into a `class` is when you start seeming to need the `Dict[str, Any]` annotation. Except in wrapper functions dealing with third party library code, a profusion of `Any` is a sure sign that you are doing typing sub-optimally.
 
 Once you do the first type checking of your codebase, then you must strive thereafter to eschew the introduction of new uses of `Any`. I say strive, because the use of `Any` always provide a quick and dirty kludge out of a trick type resolution problem. However, the more you go down that route, the less bang for buck you're going to get from the type annotations.
 
@@ -357,7 +353,7 @@ While I hand rolled all my type annotations, there are projects like [`MonkeyTyp
 
 ### `mypy` Configuration
 
-I spent a little time needing to tinker with the [configuration file: `mypy.ini`](https://mypy.readthedocs.io/en/stable/config_file.html) setup correctly so as to tweak its default behaviour to suit my project. For eg. the `mypy.ini` I settled on looked like so: 
+I spent a little time needing to tinker with the [configuration file: `mypy.ini`](https://mypy.readthedocs.io/en/stable/config_file.html) setup correctly so as to tweak its default behaviour to suit my project. For eg. the `mypy.ini` I settled on looked like so:
 
 ```ini
 [mypy]
@@ -377,9 +373,8 @@ ignore_missing_imports = False
 
 Some salient points in the above configuration are:
 
-- I opt in for a more strict type checking for code _within_ my project. `disallow_untyped_defs` and `disallow_incomplete_defs` are invaluable here because they notify you of functions where you may have forgotten to annotate a variable or missed to specify the return type. Those things definitely take a while to become second nature when you transitioning from vanilla Python to typed Python.
-
-- The `ignore_missing_imports` in the per module configuration permits ignoring the lack of type hints of any third party modules imported in the `wrappers` module in my code, housing wrapper code around third party libraries. So assuming my code was organised like:
+* I opt in for a more strict type checking for code _within_ my project. `disallow_untyped_defs` and `disallow_incomplete_defs` are invaluable here because they notify you of functions where you may have forgotten to annotate a variable or missed to specify the return type. Those things definitely take a while to become second nature when you transitioning from vanilla Python to typed Python.
+* The `ignore_missing_imports` in the per module configuration permits ignoring the lack of type hints of any third party modules imported in the `wrappers` module in my code, housing wrapper code around third party libraries. So assuming my code was organised like:
 
   ```text
   myproject
@@ -396,13 +391,13 @@ Customising per module configurations is a great way to incrementally introduce 
 
 Running `mypy` on the command-line manually to check for types as you keep writing code gets tedious quickly. Editor integration for `mypy` is fortunately easy to find and is available for most of the popular editors and IDEs. For VSCode, the Python plugin ships with `mypy` support out of the box. In `nvim`, I have `mypy` setup as a Python linter run by the [ALE](https://github.com/dense-analysis/ale) plugin. I hence get type errors highlighted for me as soon as I save the file. This quick feedback makes working in a typed Python codebase quite a joy. With proper editor integration setup, the experience coding in Python comes close to having a compiler doing this for you, that you may have come to rely on in other languages.
 
-![mypy type errors being highlighted in vim](vim_mypy_screenshot.png)
+
 
 One point to note in this regard is that I typically also have `pylint` running linting checks on my code _alongside_ `mypy`. This helps catch a lot of other errors which are not really type errors but helps catch bugs and improve code quality nevertheless.
 
 ### Pre-Commit Hook
 
-While having editor integration of `mypy` running checks on your code is great and gives quick feedback, the final source of truth is the code that gets committed. It is possible to commit the odd file in which the type correctness broke because of changes you made in an entirely different module. This will presumably be a non-issue in a company where you probably already have elaborate CI/CD pipelines to do such enforcement for you. However, my 1-man personal projects, I absolutely find it vital to run linting checks before every commit and reject those that fail those checks. 
+While having editor integration of `mypy` running checks on your code is great and gives quick feedback, the final source of truth is the code that gets committed. It is possible to commit the odd file in which the type correctness broke because of changes you made in an entirely different module. This will presumably be a non-issue in a company where you probably already have elaborate CI/CD pipelines to do such enforcement for you. However, my 1-man personal projects, I absolutely find it vital to run linting checks before every commit and reject those that fail those checks.
 
 I use the excellent [pre-commit](https://pre-commit.com/) library for this. I run both `mypy` and `pylint` checks in the pre-commit hooks to ensure type integrity across the project. While `pre-commit` library lets you run the linters on just the files containing changes in your current commit I typically run `mypy` on the entire project. However, in very large projects, your mileage may vary, and may be saddled with longer `pre-commit` lint times.
 
