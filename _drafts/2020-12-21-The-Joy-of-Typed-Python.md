@@ -391,7 +391,7 @@ Customising per module configurations is a great way to incrementally introduce 
 
 Running `mypy` on the command-line manually to check for types as you keep writing code gets tedious quickly. Editor integration for `mypy` is fortunately easy to find and is available for most of the popular editors and IDEs. For VSCode, the Python plugin ships with `mypy` support out of the box. In `nvim`, I have `mypy` setup as a Python linter run by the [ALE](https://github.com/dense-analysis/ale) plugin. I hence get type errors highlighted for me as soon as I save the file. This quick feedback makes working in a typed Python codebase quite a joy. With proper editor integration setup, the experience coding in Python comes close to having a compiler doing this for you, that you may have come to rely on in other languages.
 
-
+![Screenshot of mypy errors in vim](/images/posts/vim_mypy_screenshot.png)
 
 One point to note in this regard is that I typically also have `pylint` running linting checks on my code _alongside_ `mypy`. This helps catch a lot of other errors which are not really type errors but helps catch bugs and improve code quality nevertheless.
 
