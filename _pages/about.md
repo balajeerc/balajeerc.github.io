@@ -2,15 +2,13 @@
 
 __NOTE: Am not currently looking for opportunities__
 
-- Well rounded programmer. Programming professionally since 2010.
-- Diverse experience in various domains: most recently, Fintech (worked on all levels of the stack)
-- Love to code, trade derivatives, and code. (Like to code so nice, I say it twice).
-- Decent at a Poker table. Decent at Options trading. It ain't gambling if you can count cards.
-- Functional Programming Zealot. I chew up OOP design patterns for breakfast and spit out far more elegant functional equivalents.
-- Like most people who love Haskell, I work in other languages (Python, Javascript). Sigh.
-- Stack I reach for immediately are: Postgres, Python/NodeJS, ReactJS, Redux, Redux-Saga
+- Developer at [Sensibull](https://sensibull.com)
+- Programming professionally since 2010.
+- Diverse experience in various domains, most recently, Fintech
+- My tech word salad looks like: Python, Golang, Javascript, Postgres, Redis, AWS, React-Redux.
+- Decent at a Poker table. Decent at Options trading.
 - My employers generally love me. I love them back. Hugs!
-- Highly opinionated. On just about everything. You can read my rants on Software engineering at this site. My political views are on my Facebook page.
+- I blog on my trials and tribulations with software engineering at this site.
 - CAN BUILD ANYTHING!!!
 
 ### More Information
