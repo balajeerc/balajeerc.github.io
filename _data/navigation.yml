@@ -2,7 +2,5 @@
 main:
     - title: "About"
       url: /_pages/about/
-    - title: "Resume"
-      url: /resume
     # - title: "Archives"
     #   url: /collection-archive/

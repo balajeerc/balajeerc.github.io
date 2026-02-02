@@ -1,20 +1,20 @@
-(This is a quick informal introduction. If you are a headhunter who prefers neatly formatted resumes, you can find one of those in the header links.)
+(This is a quick informal introduction. If you prefer neatly formatted resumes, you can find it [here](https://www.balajeerc.info/resume).)
 
 __NOTE: Am not currently looking for opportunities__
 
-- Developer at [Sensibull](https://sensibull.com)
+- Product and Growth Head (previously: Founding Engineer) at [Sensibull](https://sensibull.com)
 - Programming professionally since 2010.
 - Diverse experience in various domains, most recently, Fintech
-- My tech word salad looks like: Python, Golang, Javascript, Postgres, Redis, AWS, React-Redux.
+- My tech word salad looks like: Typescript, Python, Golang, Javascript, Postgres, Redis, AWS, React-Redux.
 - Decent at a Poker table. Decent at Options trading.
 - My employers generally love me. I love them back. Hugs!
 - I blog on my trials and tribulations with software engineering at this site.
-- CAN BUILD ANYTHING!!!
+- Happy to build anything!
 
 ### More Information
 
 - Graduated from NIT, Calicut (Kozhikode) in 2008 with a degree in Mechanical Engineering
-- Decided I loved computers more that cars by the end of it (I still can't drive!)
+- Decided I loved computers more that cars by the end of it
 - Decently grounded in Mathematics.
 
 ### Contact me
@@ -22,8 +22,3 @@ __NOTE: Am not currently looking for opportunities__
 [mail@balajeerc.info](mailto:mail@balajeerc.info)
 
 
-### Public Key
-
-```
-ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIAD+Bq010WAvKGc9rUdlIVBqbgevna5UGkXWcybedX3+ mail@balajeerc.info
-```
