@@ -17,9 +17,11 @@ With some trial and error what I’ve found is that having a series of linters a
 
 Furthermore, I find that the code generated with the guardrails mentioned below is easier to read and debug when you need to get down and fix some hairy nuanced issue that the LLM agent is unable to fix by itself.
 
-While talking to some of my colleagues and friends in other firms, I realized that many of them were not fully aware of some of the newer static code analyzers. I certainly wasn’t until recently. So, hopefully this post brings your attention to the fact that some advanced deterministic linters/static code analyzers already exist for your language ecosystem. Tools like `clippy` for rust and `golangci-lint` for Go have most of these tools already built-in or available as plugins. So it’s just a matter of setting up config files appropriately.
+Hopefully, this post brings your attention to the fact that some advanced deterministic linters/static code analyzers already exist for your language ecosystem. Tools like `clippy` for rust and `golangci-lint` for Go have most of these tools already built-in or available as plugins. So it’s just a matter of setting up config files appropriately.
 
-These days, I mostly make prototypes in Typescript. So some of the suggestions below are influenced by that experience. However, I believe most of the suggestions below translate to other language ecosystems as well.  
+These days, I only code as a hobby. I mostly make prototypes in relation to my work in the Product team. So, please feel free to treat my claims with a pinch of salt since it's not coming from a developer who still pushes code to production.
+
+The suggestions below are influenced by my experience creating Typescript prototypes. However, I believe most of the suggestions below translate to other language ecosystems as well.  
 
 1. **Type-safe compiler**
     
