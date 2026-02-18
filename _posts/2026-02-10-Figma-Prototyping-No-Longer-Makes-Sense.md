@@ -24,4 +24,10 @@ The absolute kicker is how you can use the LLM itself for brainstorming and chec
 
 This also becomes a much better input for the tech team to evaluate the feasibility of implementing the sometimes fanciful features that the product team dreams up. There's nothinglike having a live prototype that you can interact and play around with that helps bring out all the hairy corner cases that we are about to run into. That's what Figma prototypes are supposed to do, but the vibe coded "live" prototype is that on steroids.
 
-Overall, I think this is a great time to be building.
+Now for some caveats: 
+
+1. A lot of my experience above is coloured by my background. I spent the first 16 years of my life writing code. I have been working in Product and Growth only for the last 5 years. And even in the last 5 years, I was always working on one hobby project at least. I code every weekend. A product manager without that background might get mixed results, though the fabulous comprehension that frontier models show seems to make this gap smaller all the time.
+2. This is throw-away code. No one's going to use this in production.
+3. Finally, as mentioned in my [previous post](/Use-Deterministic-Guardrails-for-your-LLM-Agents/), I have assembled a rather extensive scaffolding that lets me keep my code reasonably sane (small functions, small files, no code duplication, enforced modularisation etc.). In my observation, that also helps increase the probability of my prompt being transformed into a feature change or bug fix as I expect the agent to.
+
+Overall, I suppose this is a great time to be building.
