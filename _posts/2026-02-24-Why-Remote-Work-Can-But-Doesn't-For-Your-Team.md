@@ -16,11 +16,11 @@ From my experience working on a fully remote team for the past 6 years, I'd say 
 
 ## Why screen sharing is so crucial in online meetings
 
-Humans rely on visual, auditory and verbal cues. In online calls, the visual channel is either entirely absent, because the only thing that people are loathe to share even more than their screens, is their camera feed. I have seen friends mentioning that some of their teams mandate camera sharing (which I suspect is primarily driven by management's need for control over what the employees are doing, and an accompanied lack of trust in them). However, I don't know if camera sharing is as useful as screen sharing.
+Humans rely on visual, auditory and verbal cues. In online calls, the visual channel is either entirely absent (because the only thing that people are loathe to share even more than their screens, is their camera feed) or is sub-optimal because of poor camera quality, poor network or both. I have seen friends mentioning that some of their teams mandate camera sharing (which I suspect is primarily driven by management's need for control over what the employees are doing, and an accompanied lack of trust in them. However, I don't know if camera sharing is as useful as screen sharing.
 
-However, the lack of a visual channel that I see in many online calls, is a huge problem. When team members are talking to you, you can rely on their faces for clues as to emphasis and other such important cues. That's lacking in an online call.
+However, the lack of a visual channel that I see in many online calls, is indeed a huge problem. 
 
-Sharing your screen solves this.
+When people are talking to you, you can rely on their faces for clues as to emphasis and other such important cues. That's lacking in an online call. Sharing your screen solves this.
 
 I've encountered team members being very reluctant to share their screens unless explicitly prompted. Even when prompted, they typically share a particular window or a specific application. The trouble with that is that your work is seldom confined to one application, and now switching between applications is an even bigger pain. You need to stop sharing one and share another. I find this incredibly annoying and likely so do other people in a call.
 
@@ -30,5 +30,14 @@ A full screen share on the other hand makes everything easier. And here's a key 
 
 I find it surprising how few people seem to instinctively get this. The best performing remote teams will be those in which the person leading most of the discussions is comfortable doing this. If there's someone talking, there better be a screen shared with the broad outline of the conversation being written down in some form.
 
+And there's another great advantage to doing that: you can simply paste the notes in a Slack/Teams channel after the meet. It now acts as a textual memory anchor for other team members who were on the call. 
+
 That's it. That's all there is to it. All the other pushback against remote work is typically an underhanded attempt to downsize: getting people to quit without having to fire/layoff people. Or an excuse for management to exert their authority and have warm bodies that they can peer over from their corner office to lord over/keep an eye on.
 
+## Caveat: Some people do need an office though
+
+Having said that, you always need to allow for the fact that there will be team members who need an office. One of my colleagues mentioned that they absolutely need an office because they don't have a conducive atmosphere at home for deep work (screaming children, noisy relatives etc.) or those who simply need a work-life separation. I think this is a fair ask. You will definitely need to accommadate such people in an office.
+
+Some of the people who prefer office work for whatever reason then want the rest of us to come over as well. Just because. You know, they want company. In some cases, relationships they have with co-workers is the only relationship these people have at all. So in person work is just their way of seeking interpersonal connections.
+
+And in places where this kind of people hold sway, they tend to force it on the rest of us. I club this class of "Remote work is not for us" excuse in the same category as the toxic management issues I mentioned above.
