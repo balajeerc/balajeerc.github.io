@@ -1,0 +1,5 @@
+# pnpm 11 reads settings from here, not from package.json's "pnpm" field.
+# esbuild and sharp need their postinstall scripts to run or the Astro build fails.
+allowBuilds:
+  esbuild: true
+  sharp: true
