@@ -7,7 +7,7 @@
  * passes the "0-second" refresh as an instant redirect.
  */
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from "node:fs";
-import { join, dirname } from "node:path";
+import { join } from "node:path";
 
 const DIST = new URL("../dist/", import.meta.url).pathname;
 const REDIRECTS = JSON.parse(
@@ -28,11 +28,18 @@ const template = (to) => `<!DOCTYPE html>
 </html>`;
 
 let count = 0;
+let skipped = 0;
 for (const { from, to } of REDIRECTS) {
-  // Remove trailing slash from 'from' if present, then normalize
   const fromPath = from.endsWith("/") ? from.slice(0, -1) : from;
   const outDir = join(DIST, fromPath);
   const outFile = join(outDir, "index.html");
+
+  // Skip if the destination already exists as a real page (e.g., /about, /resume)
+  // This avoids overwriting actual Astro-generated pages with redirect stubs.
+  if (existsSync(outFile)) {
+    skipped++;
+    continue;
+  }
 
   if (!existsSync(outDir)) {
     mkdirSync(outDir, { recursive: true });
@@ -41,4 +48,4 @@ for (const { from, to } of REDIRECTS) {
   count++;
 }
 
-console.log(`✓ Generated ${count} redirect stubs`);
+console.log(`✓ Generated ${count} redirect stubs (${skipped} skipped — already exist)`);

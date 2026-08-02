@@ -130,13 +130,5 @@
   {
     "from": "/_pages/about",
     "to": "/about/"
-  },
-  {
-    "from": "/about",
-    "to": "/about/"
-  },
-  {
-    "from": "/resume",
-    "to": "/resume/"
   }
 ]
