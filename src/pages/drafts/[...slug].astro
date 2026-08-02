@@ -1,0 +1,75 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getCollection, render } from "astro:content";
+
+// Dev-only routes: in a production build getStaticPaths returns nothing, so no
+// /drafts page ever reaches the published site.
+export async function getStaticPaths() {
+  if (!import.meta.env.DEV) return [];
+
+  const drafts = await getCollection("drafts");
+  return [
+    { params: { slug: undefined }, props: { drafts } },
+    ...drafts.map((draft) => ({
+      params: { slug: draft.id.replace(/\.md$/, "") },
+      props: { draft },
+    })),
+  ];
+}
+
+const { draft, drafts } = Astro.props;
+
+const slug = (entry) => entry.id.replace(/\.md$/, "");
+const Content = draft ? (await render(draft)).Content : null;
+---
+
+{
+  draft ? (
+    <BaseLayout title={`${draft.data.title} (draft)`} noindex={true}>
+      <article>
+        <header class="post-header">
+          <p class="post-meta">
+            <a href="/drafts/">← drafts</a>
+          </p>
+          <h1>{draft.data.title}</h1>
+          <p class="post-meta">
+            Unpublished draft ·{" "}
+            <code>src/content/drafts/{draft.id}</code>
+          </p>
+        </header>
+        <div class="post-content">
+          <Content />
+        </div>
+      </article>
+    </BaseLayout>
+  ) : (
+    <BaseLayout title="Drafts" noindex={true}>
+      <section>
+        <h1>Drafts</h1>
+        <p>
+          Working drafts and ideas. Visible on the dev server only — never built
+          into the published site.
+        </p>
+        {drafts.length === 0 ? (
+          <p>
+            Nothing here yet. Add a markdown file to{" "}
+            <code>src/content/drafts/</code>.
+          </p>
+        ) : (
+          <ul class="post-list">
+            {drafts.map((entry) => (
+              <li>
+                <h2 class="post-title">
+                  <a href={`/drafts/${slug(entry)}/`}>{entry.data.title}</a>
+                </h2>
+                {entry.data.description && (
+                  <p class="post-excerpt">{entry.data.description}</p>
+                )}
+              </li>
+            ))}
+          </ul>
+        )}
+      </section>
+    </BaseLayout>
+  )
+}
