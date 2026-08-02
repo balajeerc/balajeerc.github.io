@@ -1,0 +1,52 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+
+const posts = await getCollection("posts");
+const sortedPosts = posts.sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+
+const slug = (post) => post.id.replace(/\.md$/, "");
+---
+
+<BaseLayout
+  title="Balajee Ramachandran"
+  description="Programmer. Blogger. Nice Guy."
+>
+  <section>
+    <!-- JSON-LD Person structured data -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Person",
+      name: "Balajee Ramachandran",
+      url: "https://www.balajeerc.info",
+      description: "Programmer. Blogger. Nice Guy.",
+      sameAs: [
+        "https://github.com/balajeerc",
+      ],
+    })} />
+
+    <ul class="post-list">
+      {
+        sortedPosts.map((post) => (
+          <li>
+            <p class="post-meta">
+              {post.data.pubDate.toLocaleDateString("en-US", {
+                year: "numeric",
+                month: "long",
+                day: "numeric",
+              })}
+            </p>
+            <h2 class="post-title">
+              <a href={`/posts/${slug(post)}/`}>{post.data.title}</a>
+            </h2>
+            {post.data.description && (
+              <p class="post-excerpt">{post.data.description}</p>
+            )}
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+</BaseLayout>

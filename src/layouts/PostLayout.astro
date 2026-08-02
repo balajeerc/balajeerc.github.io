@@ -1,0 +1,63 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+import type { CollectionEntry } from "astro:content";
+
+export interface Props {
+  post: CollectionEntry<"posts">;
+}
+
+const { post } = Astro.props;
+const { title, pubDate, description, tags } = post.data;
+const slug = post.id.replace(/\.md$/, "");
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  type="article"
+  article={{
+    publishedTime: pubDate.toISOString(),
+    tags: tags ?? [],
+  }}
+>
+  <article>
+    <header class="post-header">
+      <h1>{title}</h1>
+      <p class="post-meta">
+        {pubDate.toLocaleDateString("en-US", {
+          year: "numeric",
+          month: "long",
+          day: "numeric",
+        })}
+        {tags && tags.length > 0 && (
+          <>
+            {" · "}
+            {tags.map((tag) => (
+              <span class="tag">{tag}</span>
+            ))}
+          </>
+        )}
+      </p>
+    </header>
+
+    <div class="post-content">
+      <slot />
+    </div>
+
+    <!-- JSON-LD structured data -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      headline: title,
+      description: description,
+      datePublished: pubDate.toISOString(),
+      author: {
+        "@type": "Person",
+        name: "Balajee Ramachandran",
+        url: "https://www.balajeerc.info",
+      },
+      url: `https://www.balajeerc.info/posts/${slug}/`,
+      ...(tags && tags.length > 0 ? { keywords: tags.join(", ") } : {}),
+    })} />
+  </article>
+</BaseLayout>

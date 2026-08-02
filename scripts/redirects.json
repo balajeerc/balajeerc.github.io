@@ -1,0 +1,142 @@
+[
+  {
+    "from": "/On-Electron",
+    "to": "/posts/on-electron/"
+  },
+  {
+    "from": "/on-electron",
+    "to": "/posts/on-electron/"
+  },
+  {
+    "from": "/Why-Arent-More-APIs-Declarative",
+    "to": "/posts/why-arent-more-apis-declarative/"
+  },
+  {
+    "from": "/why-arent-more-apis-declarative",
+    "to": "/posts/why-arent-more-apis-declarative/"
+  },
+  {
+    "from": "/The-Joy-of-Typed-Python",
+    "to": "/posts/the-joy-of-typed-python/"
+  },
+  {
+    "from": "/the-joy-of-typed-python",
+    "to": "/posts/the-joy-of-typed-python/"
+  },
+  {
+    "from": "/Good-OOP-Design-Favours-Less-OOP",
+    "to": "/posts/good-oop-design-favours-less-oop/"
+  },
+  {
+    "from": "/good-oop-design-favours-less-oop",
+    "to": "/posts/good-oop-design-favours-less-oop/"
+  },
+  {
+    "from": "/On-d3",
+    "to": "/posts/on-d3/"
+  },
+  {
+    "from": "/on-d3",
+    "to": "/posts/on-d3/"
+  },
+  {
+    "from": "/Rooting-out-CPU-Bottlenecks-from-asyncio-based-API-services",
+    "to": "/posts/rooting-out-cpu-bottlenecks-from-asyncio-based-api-services/"
+  },
+  {
+    "from": "/rooting-out-cpu-bottlenecks-from-asyncio-based-api-services",
+    "to": "/posts/rooting-out-cpu-bottlenecks-from-asyncio-based-api-services/"
+  },
+  {
+    "from": "/Tiling-Window-Managers",
+    "to": "/posts/tiling-window-managers/"
+  },
+  {
+    "from": "/tiling-window-managers",
+    "to": "/posts/tiling-window-managers/"
+  },
+  {
+    "from": "/Figma-Prototyping-No-Longer-Makes-Sense",
+    "to": "/posts/figma-prototyping-no-longer-makes-sense/"
+  },
+  {
+    "from": "/figma-prototyping-no-longer-makes-sense",
+    "to": "/posts/figma-prototyping-no-longer-makes-sense/"
+  },
+  {
+    "from": "/Debuggers",
+    "to": "/posts/debuggers/"
+  },
+  {
+    "from": "/debuggers",
+    "to": "/posts/debuggers/"
+  },
+  {
+    "from": "/My-New-Favourite-Terminal-Emulator-Vim",
+    "to": "/posts/my-new-favourite-terminal-emulator-vim/"
+  },
+  {
+    "from": "/My-New-Favourite-Terminal-Emulator--Vim",
+    "to": "/posts/my-new-favourite-terminal-emulator-vim/"
+  },
+  {
+    "from": "/my-new-favourite-terminal-emulator-vim",
+    "to": "/posts/my-new-favourite-terminal-emulator-vim/"
+  },
+  {
+    "from": "/There-is-No-Idiomatic-Haskell",
+    "to": "/posts/there-is-no-idiomatic-haskell/"
+  },
+  {
+    "from": "/there-is-no-idiomatic-haskell",
+    "to": "/posts/there-is-no-idiomatic-haskell/"
+  },
+  {
+    "from": "/Lessons-Learnt-Last-Year",
+    "to": "/posts/lessons-learnt-last-year/"
+  },
+  {
+    "from": "/lessons-learnt-last-year",
+    "to": "/posts/lessons-learnt-last-year/"
+  },
+  {
+    "from": "/On-Project-Management",
+    "to": "/posts/on-project-management/"
+  },
+  {
+    "from": "/on-project-management",
+    "to": "/posts/on-project-management/"
+  },
+  {
+    "from": "/Use-Deterministic-Guardrails-for-your-LLM-Agents",
+    "to": "/posts/use-deterministic-guardrails-for-your-llm-agents/"
+  },
+  {
+    "from": "/Deterministic-Guardrails-for-your-Stochastic-AI-Coworker",
+    "to": "/posts/use-deterministic-guardrails-for-your-llm-agents/"
+  },
+  {
+    "from": "/use-deterministic-guardrails-for-your-llm-agents",
+    "to": "/posts/use-deterministic-guardrails-for-your-llm-agents/"
+  },
+  {
+    "from": "/Why-Remote-Work-Can-But-Doesnt-For-Your-Team",
+    "to": "/posts/why-remote-work-can-but-doesnt-for-your-team/"
+  },
+  {
+    "from": "/why-remote-work-can-but-doesnt-for-your-team",
+    "to": "/posts/why-remote-work-can-but-doesnt-for-your-team/"
+  },
+  {
+    "from": "/_pages/about",
+    "to": "/about/"
+  },
+  {
+    "from": "/about",
+    "to": "/about/"
+  },
+  {
+    "from": "/resume",
+    "to": "/resume/"
+  }
+]

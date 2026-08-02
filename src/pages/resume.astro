@@ -1,0 +1,173 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Resume">
+  <article>
+    <header class="page-header">
+      <h1>Balajee Ramachandran</h1>
+      <p class="resume-contact">
+        <a href="mailto:mail@balajeerc.info">mail@balajeerc.info</a>
+        {" · "}
+        <a href="https://github.com/balajeerc">github</a>
+        {" · "}
+        Bangalore, India
+      </p>
+    </header>
+
+    <div class="resume-section">
+      <h2>About</h2>
+      <p>
+        Co-founder, Product and Growth Head @ Sensibull. Generalist with
+        experience at various levels of the application stack: from single page
+        web UI development (React/JS), microservices in NodeJS and Python, to
+        low level algorithm optimizations in C++. Now, I primarily help with
+        Product and Growth @ Sensibull. Happy to build anything.
+      </p>
+    </div>
+
+    <div class="resume-section">
+      <h2>Work Experience</h2>
+
+      <div class="resume-job">
+        <h3>Sensibull</h3>
+        <p class="meta">
+          <a href="https://sensibull.com">sensibull.com</a> {" · "} Nov 2017 –
+          Present
+        </p>
+        <p><strong>Co-Founder, Product and Growth Head</strong></p>
+        <p>
+          (Previously — Founding engineer on India's First Options Trading
+          Platform)
+        </p>
+        <p class="meta" style="margin-top: 0.5em;">Highlights</p>
+        <ul>
+          <li>
+            Helped with inception of the entire product, all ends of stack
+          </li>
+          <li>
+            Writing the core Option Math Engine powering the site and its
+            maintenance
+          </li>
+          <li>
+            Backend infra jobs running number crunching, optimization of API
+            services etc.
+          </li>
+          <li>
+            Python, Tornado, NodeJS, React, Redux, Redux-Saga, AWS ECS, AWS
+            Fargate
+          </li>
+        </ul>
+      </div>
+
+      <div class="resume-job">
+        <h3>VizExperts India Pvt. Ltd.</h3>
+        <p class="meta">
+          <a href="http://vizexperts.com">vizexperts.com</a> {" · "} April 2015
+          – May 2017
+        </p>
+        <p><strong>Engineer</strong></p>
+        <p>Lead Developer on GeorbIS — an enterprise GIS application stack</p>
+        <p class="meta" style="margin-top: 0.5em;">Highlights</p>
+        <ul>
+          <li>
+            Was first developer on the green field project. It eventually grew
+            into a major product for the firm.
+          </li>
+          <li>
+            Architected the stack, wrangling together several open source
+            components and in-house GIS components to provide web services to
+            provide raster and vector maps, and a single page application front
+            end
+          </li>
+          <li>
+            Javascript, React, Redux, Spring Boot, C++ (GIS algorithms),
+            Postgres
+          </li>
+        </ul>
+      </div>
+
+      <div class="resume-job">
+        <h3>VizExperts India Pvt. Ltd.</h3>
+        <p class="meta">
+          <a href="http://vizexperts.com">vizexperts.com</a> {" · "} January
+          2013 – April 2015
+        </p>
+        <p><strong>Engineer, Graphics</strong></p>
+        <p>Programmer on VizExperts — Video Wall Compositing Software</p>
+        <p class="meta" style="margin-top: 0.5em;">Highlights</p>
+        <ul>
+          <li>
+            Implemented a image warping and blending for seamless display over
+            projectors
+          </li>
+          <li>
+            Dramatically improved OpenGL rendering performance (~300%)
+          </li>
+          <li>
+            Developed new controller front end that networks with the video wall
+            server over TCP/IP
+          </li>
+          <li>OpenGL, C++, Qt, QtQuick(QML)</li>
+        </ul>
+      </div>
+
+      <div class="resume-job">
+        <h3>Terminus Graphics Pvt. Ltd. (defunct)</h3>
+        <p class="meta">August 2010 – June 2012</p>
+        <p><strong>Programmer</strong></p>
+        <p>Programmer on Psylver — a 3D real time graphics engine</p>
+        <p class="meta" style="margin-top: 0.5em;">Highlights</p>
+        <ul>
+          <li>Worked on 3D scenegraph rendering optimizations</li>
+          <li>Setup an asset export pipeline from Blender3D to engine</li>
+          <li>OpenGL, C++, Lua, Python</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="resume-section">
+      <h2>Education</h2>
+
+      <div class="resume-job">
+        <h3>National Institute of Technology, Calicut</h3>
+        <p class="meta">2004 – 2008</p>
+        <p>
+          Bachelor (B.Tech) — Mechanical Engineering
+        </p>
+      </div>
+    </div>
+
+    <div class="resume-section">
+      <h2>Skills</h2>
+
+      <p><strong>Programming Languages</strong></p>
+      <p>
+        <span class="tag">Javascript</span>
+        <span class="tag">Python</span>
+        <span class="tag">Haskell</span>
+      </p>
+
+      <p><strong>Web Development</strong></p>
+      <p>
+        <span class="tag">React</span>
+        <span class="tag">Redux</span>
+        <span class="tag">Redux-Saga</span>
+        <span class="tag">NodeJS</span>
+        <span class="tag">tornado</span>
+      </p>
+
+      <p><strong>Cloud Services</strong></p>
+      <p>
+        <span class="tag">AWS EC2</span>
+        <span class="tag">AWS ECS</span>
+        <span class="tag">AWS Fargate</span>
+      </p>
+    </div>
+
+    <div class="resume-section">
+      <h2>Languages</h2>
+      <p>English — Very fluent</p>
+    </div>
+  </article>
+</BaseLayout>

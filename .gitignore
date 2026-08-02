@@ -1,10 +1,30 @@
-_site
+# build output
+dist/
+
+# astro generated types and content cache
+.astro/
+
+# dependencies
+node_modules/
+
+# dotenv environment variable files
+.env
+.env.production
+.env.local
+
+# macOS
 .DS_Store
+
+# Editor
+.vscode/
+*.swp
+*.swo
+
+# Old Jekyll files (keep for reference but not served)
+_site
 .jekyll
 .jekyll-metadata
-.bundle
 .sass-cache
+.bundle
 Gemfile
 Gemfile.lock
-node_modules
-package.json
