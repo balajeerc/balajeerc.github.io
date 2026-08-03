@@ -4,7 +4,8 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "dev": "astro dev",
+    "dev": "node scripts/dev.mjs",
+    "dev:force": "node scripts/dev.mjs --force",
     "build": "astro build && node scripts/generate-redirects.mjs",
     "preview": "astro preview",
     "publish-draft": "node scripts/publish-draft.mjs",

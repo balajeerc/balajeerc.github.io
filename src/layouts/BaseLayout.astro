@@ -29,6 +29,16 @@ const canonicalURL = getCanonicalURL(Astro.url.pathname, siteUrl);
 const ogImage = new URL(image, siteUrl);
 
 const fullTitle = title === siteTitle ? title : `${title} — ${siteTitle}`;
+
+const navLinks = [
+  { href: "/", label: "Blog" },
+  { href: "/about", label: "About" },
+  { href: "/resume", label: "Resume" },
+];
+
+const currentPath = Astro.url.pathname.replace(/\/+$/, "") || "/";
+const isCurrent = (href: string) =>
+  href === "/" ? currentPath === "/" || currentPath.startsWith("/posts") : currentPath === href;
 ---
 
 <!doctype html>
@@ -107,9 +117,11 @@ const fullTitle = title === siteTitle ? title : `${title} — ${siteTitle}`;
           <a href="/">Balajee Ramachandran</a>
         </span>
         <nav class="site-nav">
-          <a href="/">Blog</a>
-          <a href="/about">About</a>
-          <a href="/resume">Resume</a>
+          {navLinks.map(({ href, label }) => (
+            <a href={href} aria-current={isCurrent(href) ? "page" : undefined}>
+              {label}
+            </a>
+          ))}
         </nav>
       </div>
     </header>

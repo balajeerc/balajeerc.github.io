@@ -14,5 +14,10 @@ export default defineConfig({
   server: {
     // Allow access via Cloudflare quick tunnels (dev only convenience)
     allowedHosts: true,
+    port: 4000,
+  },
+  vite: {
+    // Fail instead of hopping to the next free port.
+    server: { strictPort: true },
   },
 });
