@@ -28,6 +28,10 @@
 }
 
 :root {
+  /* Tells the browser we render both schemes ourselves, so it styles form
+     controls, scrollbars and the canvas to match instead of forcing a scheme. */
+  color-scheme: light;
+
   --bg: #ffffff;
   --fg: #1a1a1a;
   --fg-secondary: #6b6b6b;
@@ -51,6 +55,8 @@
 /* Dark palette. Applied when the reader has explicitly chosen dark, or when
    the browser prefers dark and they have not explicitly chosen light. */
 :root[data-theme="dark"] {
+  color-scheme: dark;
+
   --bg: #1a1a1a;
   --fg: #e5e5e5;
   --fg-secondary: #9ca3af;
@@ -66,6 +72,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
+    color-scheme: dark;
+
     --bg: #1a1a1a;
     --fg: #e5e5e5;
     --fg-secondary: #9ca3af;
