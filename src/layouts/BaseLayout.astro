@@ -32,13 +32,15 @@ const fullTitle = title === siteTitle ? title : `${title} — ${siteTitle}`;
 
 const navLinks = [
   { href: "/", label: "Blog" },
-  { href: "/about", label: "About" },
-  { href: "/resume", label: "Resume" },
+  { href: "/about/", label: "About" },
+  { href: "/resume/", label: "Resume" },
 ];
 
 const currentPath = Astro.url.pathname.replace(/\/+$/, "") || "/";
 const isCurrent = (href: string) =>
-  href === "/" ? currentPath === "/" || currentPath.startsWith("/posts") : currentPath === href;
+  href === "/"
+    ? currentPath === "/" || currentPath.startsWith("/posts")
+    : currentPath === href.replace(/\/+$/, "");
 ---
 
 <!doctype html>
@@ -97,17 +99,11 @@ const isCurrent = (href: string) =>
     <link rel="apple-touch-icon" href="/favicon.svg" />
 
     <link
-      rel="preconnect"
-      href="https://fonts.googleapis.com"
-    />
-    <link
-      rel="preconnect"
-      href="https://fonts.gstatic.com"
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href="/fonts/inter-latin-400-normal.woff2"
       crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
-      rel="stylesheet"
     />
 
     <!-- Feeds -->
